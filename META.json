@@ -30,6 +30,9 @@
             "List::Util" : "0",
             "Moo" : "0",
             "Net::HTTP::Spore" : "0",
+            "Scalar::Util" : "0",
+            "Try::Tiny" : "0",
+            "URI" : "0",
             "autodie" : "0",
             "perl" : "v5.10.1",
             "strict" : "0",
@@ -66,10 +69,7 @@
       },
       "WebService::Zaqar" : {
          "file" : "lib/WebService/Zaqar.pm",
-         "version" : "0.004"
-      },
-      "WebService::Zaqar::Response" : {
-         "file" : "lib/WebService/Zaqar/Response.pm"
+         "version" : "0.005"
       }
    },
    "release_status" : "stable",
@@ -84,5 +84,5 @@
          "url" : "https://github.com/Weborama/WebService-Zaqar.git"
       }
    },
-   "version" : "0.004"
+   "version" : "0.005"
 }
