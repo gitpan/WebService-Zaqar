@@ -1,11 +1,10 @@
 Build.PL
 Changes
-lib/Net/HTTP/Spore/Middleware/Auth/DynamicHeader.pm
-lib/Net/HTTP/Spore/Middleware/DateHeader.pm
-lib/Net/HTTP/Spore/Middleware/Format/JSONSometimes.pm
-lib/Net/HTTP/Spore/Middleware/Header.pm
-lib/Net/HTTP/Spore/Middleware/JustCallIt.pm
 lib/WebService/Zaqar.pm
+lib/WebService/Zaqar/Middleware/Auth/DynamicHeader.pm
+lib/WebService/Zaqar/Middleware/DateHeader.pm
+lib/WebService/Zaqar/Middleware/Format/JSONSometimes.pm
+lib/WebService/Zaqar/Middleware/JustCallIt.pm
 LICENSE
 MANIFEST			This list of files
 META.json

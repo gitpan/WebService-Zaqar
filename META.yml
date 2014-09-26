@@ -15,22 +15,17 @@ meta-spec:
   version: '1.4'
 name: WebService-Zaqar
 provides:
-  Net::HTTP::Spore::Middleware::Auth::DynamicHeader:
-    file: lib/Net/HTTP/Spore/Middleware/Auth/DynamicHeader.pm
-  Net::HTTP::Spore::Middleware::DateHeader:
-    file: lib/Net/HTTP/Spore/Middleware/DateHeader.pm
-  Net::HTTP::Spore::Middleware::Format::JSON:
-    file: lib/Net/HTTP/Spore/Middleware/Format/JSONSometimes.pm
-    version: '0.07'
-  Net::HTTP::Spore::Middleware::Format::JSONSometimes:
-    file: lib/Net/HTTP/Spore/Middleware/Format/JSONSometimes.pm
-  Net::HTTP::Spore::Middleware::Header:
-    file: lib/Net/HTTP/Spore/Middleware/Header.pm
-  Net::HTTP::Spore::Middleware::JustCallIt:
-    file: lib/Net/HTTP/Spore/Middleware/JustCallIt.pm
   WebService::Zaqar:
     file: lib/WebService/Zaqar.pm
-    version: '0.005'
+    version: '0.006'
+  WebService::Zaqar::Middleware::Auth::DynamicHeader:
+    file: lib/WebService/Zaqar/Middleware/Auth/DynamicHeader.pm
+  WebService::Zaqar::Middleware::DateHeader:
+    file: lib/WebService/Zaqar/Middleware/DateHeader.pm
+  WebService::Zaqar::Middleware::Format::JSONSometimes:
+    file: lib/WebService/Zaqar/Middleware/Format/JSONSometimes.pm
+  WebService::Zaqar::Middleware::JustCallIt:
+    file: lib/WebService/Zaqar/Middleware/JustCallIt.pm
 requires:
   Carp: '0'
   Data::UUID: '0'
@@ -41,6 +36,7 @@ requires:
   List::Util: '0'
   Moo: '0'
   Net::HTTP::Spore: '0'
+  Net::HTTP::Spore::Middleware::Header: '0'
   Scalar::Util: '0'
   Try::Tiny: '0'
   URI: '0'
@@ -53,4 +49,4 @@ resources:
   bugtracker: https://github.com/Weborama/WebService-Zaqar/issues
   license: http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
   repository: https://github.com/Weborama/WebService-Zaqar.git
-version: '0.005'
+version: '0.006'
