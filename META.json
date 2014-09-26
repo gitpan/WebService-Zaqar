@@ -1,0 +1,88 @@
+{
+   "abstract" : "SPORE client for Zaqar aka Marconi",
+   "author" : [
+      "Fabrice Gabolde <fgabolde@weborama.com>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4205",
+   "license" : [
+      "gpl_1"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "WebService-Zaqar",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.36_14"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "Data::UUID" : "0",
+            "File::ShareDir" : "1.00",
+            "HTTP::Date" : "0",
+            "HTTP::Request" : "0",
+            "JSON" : "0",
+            "List::Util" : "0",
+            "Moo" : "0",
+            "Net::HTTP::Spore" : "0",
+            "autodie" : "0",
+            "perl" : "v5.10.1",
+            "strict" : "0",
+            "utf8" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::More" : "0",
+            "Test::SetupTeardown" : "0"
+         }
+      }
+   },
+   "provides" : {
+      "Net::HTTP::Spore::Middleware::Auth::DynamicHeader" : {
+         "file" : "lib/Net/HTTP/Spore/Middleware/Auth/DynamicHeader.pm"
+      },
+      "Net::HTTP::Spore::Middleware::DateHeader" : {
+         "file" : "lib/Net/HTTP/Spore/Middleware/DateHeader.pm"
+      },
+      "Net::HTTP::Spore::Middleware::Format::JSON" : {
+         "file" : "lib/Net/HTTP/Spore/Middleware/Format/JSONSometimes.pm",
+         "version" : "0.07"
+      },
+      "Net::HTTP::Spore::Middleware::Format::JSONSometimes" : {
+         "file" : "lib/Net/HTTP/Spore/Middleware/Format/JSONSometimes.pm"
+      },
+      "Net::HTTP::Spore::Middleware::Header" : {
+         "file" : "lib/Net/HTTP/Spore/Middleware/Header.pm"
+      },
+      "Net::HTTP::Spore::Middleware::JustCallIt" : {
+         "file" : "lib/Net/HTTP/Spore/Middleware/JustCallIt.pm"
+      },
+      "WebService::Zaqar" : {
+         "file" : "lib/WebService/Zaqar.pm",
+         "version" : "0.004"
+      },
+      "WebService::Zaqar::Response" : {
+         "file" : "lib/WebService/Zaqar/Response.pm"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/Weborama/WebService-Zaqar/issues"
+      },
+      "license" : [
+         "http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt"
+      ],
+      "repository" : {
+         "url" : "https://github.com/Weborama/WebService-Zaqar.git"
+      }
+   },
+   "version" : "0.004"
+}
