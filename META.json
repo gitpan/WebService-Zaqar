@@ -14,6 +14,12 @@
    },
    "name" : "WebService-Zaqar",
    "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0",
+            "Test::SetupTeardown" : "0"
+         }
+      },
       "configure" : {
          "requires" : {
             "Module::Build" : "0.36_14"
@@ -40,18 +46,12 @@
             "utf8" : "0",
             "warnings" : "0"
          }
-      },
-      "test" : {
-         "requires" : {
-            "Test::More" : "0",
-            "Test::SetupTeardown" : "0"
-         }
       }
    },
    "provides" : {
       "WebService::Zaqar" : {
          "file" : "lib/WebService/Zaqar.pm",
-         "version" : "0.006"
+         "version" : "0.007"
       },
       "WebService::Zaqar::Middleware::Auth::DynamicHeader" : {
          "file" : "lib/WebService/Zaqar/Middleware/Auth/DynamicHeader.pm"
@@ -78,5 +78,5 @@
          "url" : "https://github.com/Weborama/WebService-Zaqar.git"
       }
    },
-   "version" : "0.006"
+   "version" : "0.007"
 }

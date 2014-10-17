@@ -17,7 +17,7 @@ name: WebService-Zaqar
 provides:
   WebService::Zaqar:
     file: lib/WebService/Zaqar.pm
-    version: '0.006'
+    version: '0.007'
   WebService::Zaqar::Middleware::Auth::DynamicHeader:
     file: lib/WebService/Zaqar/Middleware/Auth/DynamicHeader.pm
   WebService::Zaqar::Middleware::DateHeader:
@@ -49,4 +49,4 @@ resources:
   bugtracker: https://github.com/Weborama/WebService-Zaqar/issues
   license: http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
   repository: https://github.com/Weborama/WebService-Zaqar.git
-version: '0.006'
+version: '0.007'
