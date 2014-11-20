@@ -51,7 +51,7 @@
    "provides" : {
       "WebService::Zaqar" : {
          "file" : "lib/WebService/Zaqar.pm",
-         "version" : "0.007"
+         "version" : "0.008"
       },
       "WebService::Zaqar::Middleware::Auth::DynamicHeader" : {
          "file" : "lib/WebService/Zaqar/Middleware/Auth/DynamicHeader.pm"
@@ -78,5 +78,5 @@
          "url" : "https://github.com/Weborama/WebService-Zaqar.git"
       }
    },
-   "version" : "0.007"
+   "version" : "0.008"
 }

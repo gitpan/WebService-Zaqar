@@ -16,7 +16,7 @@ use Scalar::Util qw/blessed/;
 use Data::UUID;
 use Try::Tiny;
 
-our $VERSION = '0.007';
+our $VERSION = '0.008';
 
 has 'base_url' => (is => 'ro',
                    writer => '_set_base_url');
@@ -110,12 +110,8 @@ sub do_request {
                 if ($exception->code == 599) {
                     croak($exception->body->{error});
                 }
-                # some other SPORE exception, try to display useful stuff
-                my $body = $exception->body;
-                croak(sprintf(q{HTTP %s: %s},
-                              $exception->code,
-                              ref($exception->body) ? JSON::encode_json($exception->body)
-                                                    : $exception->body || '(no response contents)'))
+                # some other SPORE exception
+                croak $exception;
             }
             # wasn't a Spore exception, rethrow
             croak $exception;
